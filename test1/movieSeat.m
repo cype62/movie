@@ -43,6 +43,7 @@
     _stXY = [[NSString alloc] initWithFormat:@"%d排%d座",_seatX,_seatY ];
 }
 
+//展示已选座位
 -(void)seatXYb{
     int x;      //横排
     int y;      //纵排
@@ -69,7 +70,9 @@
         }
 }
 
+//缴费方法
 -(void)doPay{
+    
     //  获取字符串类型
     NSLog(@"你确定要购买吗? y/n\n");
     char pay;
@@ -77,7 +80,7 @@
     scanf("%c",&pay);
     if(pay == 'y'){
         NSLog(@"你好，这是你的购票信息，款项已扣除：\n");
-        
+//        NSLog(@"已扣款，电影票据：%@\n",[ ])
     }else if(pay == 'n'){
         NSLog(@"退出\n");
     }else{
@@ -85,19 +88,5 @@
     }
 }
 
-
-
-
-
-
-
-
-
-//-(id) movieName{
-//    moveListDic();
-//    NSArray *name = moveListDic();
-////    NSPredicate *pre = [NSPredicate predicateWithFormat:"SELF CONTAINS"]
-//    return name;
-//}
 
 @end

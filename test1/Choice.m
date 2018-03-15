@@ -23,27 +23,49 @@
     movieSeat *seat = [[movieSeat alloc]init];
     switch (userSelect) {
         case 1:
-            [list setNum:userSelect-1];
+            [list setNum:userSelect];
             [seat seatXY];
             NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
             [seat doPay];
             [seat seatXYb];
+            [list movieListDic];
+            NSLog(@"%@",list.movieName);
             break;
         case 2:
-            [list setNum:userSelect-1];
+            [list setNum:userSelect];
             [seat seatXY];
+            NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
+            [seat doPay];
+            [seat seatXYb];
+            [list movieListDic];
+            NSLog(@"%@",list.movieName);
             break;
         case 3:
-            [list setNum:userSelect-1];
+            [list setNum:userSelect];
             [seat seatXY];
+            NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
+            [seat doPay];
+            [seat seatXYb];
+            [list movieListDic];
+            NSLog(@"%@",list.movieName);
             break;
         case 4:
-            [list setNum:userSelect-1];
+            [list setNum:userSelect];
             [seat seatXY];
+            NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
+            [seat doPay];
+            [seat seatXYb];
+            [list movieListDic];
+            NSLog(@"%@",list.movieName);
             break;
         case 5:
-            [list setNum:userSelect-1];
+            [list setNum:userSelect];
             [seat seatXY];
+            NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
+            [seat doPay];
+            [seat seatXYb];
+            [list movieListDic];
+            NSLog(@"%@",list.movieName);
             break;
         default:
             NSLog(@"输入有误，请重新输入！");

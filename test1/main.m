@@ -21,8 +21,7 @@ int main(int argc, const char * argv[]) {
         [list movieList];
         Choice *userSelect = [[Choice alloc] init];
         [userSelect movieChoice];
-       
-        
+
          }
     return 0;
 }

@@ -11,14 +11,17 @@
 @interface movieInfo : NSObject{
     NSString *title;
     int num;
+    NSString *movieName;
 }
 
-//-(NSArray *)movieListDic;
+-(id)movieListDic;
 //获取电影列表
 -(void)movieList;
 //根据编号获取电影名称
 -(void)setNum:(int)newNum;
 //获取电影名称
 -(id)titleName;
+//获取购票的电影信息
+-(id)movieName;
 
 @end

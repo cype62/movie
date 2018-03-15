@@ -8,7 +8,8 @@
 #define NSLog(FORMAT, ...) fprintf(stderr,"%s",[[NSString   stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
 #define  movieLog(x) NSLog(@"亲，你选择的电影是：%@",x);
 #import "Choice.h"
-#import "movielist.h"
+#import "movieSeat.h"
+#import "movieInfo.h"
 
 @implementation Choice
 
@@ -18,29 +19,30 @@
     int userSelect = 0;
     scanf("%d",&userSelect);
     
-    movielist *list = [[movielist alloc]init];
-    
+    movieInfo *list = [[movieInfo alloc]init];
+    movieSeat *seat = [[movieSeat alloc]init];
     switch (userSelect) {
         case 1:
             [list setNum:userSelect-1];
-            [list seatXY];
-            [list doPay];
+            [seat seatXY];
+            NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
+            [seat doPay];
             break;
         case 2:
             [list setNum:userSelect-1];
-            [list seatXY];
+            [seat seatXY];
             break;
         case 3:
             [list setNum:userSelect-1];
-            [list seatXY];
+            [seat seatXY];
             break;
         case 4:
             [list setNum:userSelect-1];
-            [list seatXY];
+            [seat seatXY];
             break;
         case 5:
             [list setNum:userSelect-1];
-            [list seatXY];
+            [seat seatXY];
             break;
         default:
             NSLog(@"输入有误，请重新输入！");

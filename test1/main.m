@@ -7,8 +7,9 @@
 //
 #define NSLog(FORMAT, ...) fprintf(stderr,"%s",[[NSString   stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
 #import <Foundation/Foundation.h>
-#import "movielist.h"
 #import "Choice.h"
+#import "movieSeat.h"
+#import "movieInfo.h"
 
 
 
@@ -16,7 +17,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"==============欢迎观临慕课电影院==============\n");
         NSLog(@"=======热播电影列表=======\n");
-        movielist *list = [[movielist alloc] init];
+        movieInfo *list = [[movieInfo alloc] init];
         [list movieList];
         Choice *userSelect = [[Choice alloc] init];
         [userSelect movieChoice];

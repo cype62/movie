@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2ADA6E6205A527800DA5B29 /* movieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ADA6E5205A527800DA5B29 /* movieInfo.m */; };
 		B2EAB0C320542A900018D162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB0C220542A900018D162 /* main.m */; };
-		B2EAB0CE205831A30018D162 /* movielist.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB0CD205831A30018D162 /* movielist.m */; };
+		B2EAB0CE205831A30018D162 /* movieSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB0CD205831A30018D162 /* movieSeat.m */; };
 		B2EAB0D1205839240018D162 /* Choice.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB0D0205839240018D162 /* Choice.m */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B2ADA6E4205A527800DA5B29 /* movieInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movieInfo.h; sourceTree = "<group>"; };
+		B2ADA6E5205A527800DA5B29 /* movieInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movieInfo.m; sourceTree = "<group>"; };
 		B2EAB0BF20542A900018D162 /* test1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test1; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EAB0C220542A900018D162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B2EAB0CC205831A30018D162 /* movielist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movielist.h; sourceTree = "<group>"; };
-		B2EAB0CD205831A30018D162 /* movielist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movielist.m; sourceTree = "<group>"; };
+		B2EAB0CC205831A30018D162 /* movieSeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = movieSeat.h; sourceTree = "<group>"; };
+		B2EAB0CD205831A30018D162 /* movieSeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movieSeat.m; sourceTree = "<group>"; };
 		B2EAB0CF205839240018D162 /* Choice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Choice.h; sourceTree = "<group>"; };
 		B2EAB0D0205839240018D162 /* Choice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Choice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +69,10 @@
 				B2EAB0C220542A900018D162 /* main.m */,
 				B2EAB0CF205839240018D162 /* Choice.h */,
 				B2EAB0D0205839240018D162 /* Choice.m */,
-				B2EAB0CC205831A30018D162 /* movielist.h */,
-				B2EAB0CD205831A30018D162 /* movielist.m */,
+				B2EAB0CC205831A30018D162 /* movieSeat.h */,
+				B2EAB0CD205831A30018D162 /* movieSeat.m */,
+				B2ADA6E4205A527800DA5B29 /* movieInfo.h */,
+				B2ADA6E5205A527800DA5B29 /* movieInfo.m */,
 			);
 			path = test1;
 			sourceTree = "<group>";
@@ -130,7 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EAB0D1205839240018D162 /* Choice.m in Sources */,
-				B2EAB0CE205831A30018D162 /* movielist.m in Sources */,
+				B2EAB0CE205831A30018D162 /* movieSeat.m in Sources */,
+				B2ADA6E6205A527800DA5B29 /* movieInfo.m in Sources */,
 				B2EAB0C320542A900018D162 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,6 +27,7 @@
             [seat seatXY];
             NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
             [seat doPay];
+            [seat seatXYb];
             break;
         case 2:
             [list setNum:userSelect-1];

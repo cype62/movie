@@ -43,7 +43,33 @@
     _stXY = [[NSString alloc] initWithFormat:@"%d排%d座",_seatX,_seatY ];
 }
 
--(id)doPay{
+-(void)seatXYb{
+    int x;      //横排
+    int y;      //纵排
+    NSLog(@"现在为你展示影厅的座位表");
+    for(y = 0;y <= 7;y++){
+        NSLog(@"\n");
+        if(y == 0){
+            for(x = 0;x <= 15;x++){
+                NSLog(@"%02d ",x);
+            }
+        }else{
+            for(x = 0;x <= 15;x++){
+                if(x == 0){
+                    NSLog(@"%02d ",y);
+                }else if(x == _seatX && y == _seatY){
+                    NSLog(@"@  ");
+                }else{
+                    NSLog(@"+  ");
+                    }
+                }
+            
+            }
+        
+        }
+}
+
+-(void)doPay{
     //  获取字符串类型
     NSLog(@"你确定要购买吗? y/n\n");
     char pay;
@@ -57,7 +83,6 @@
     }else{
         NSLog(@"输入有误，请重新输入!");
     }
-    return 0;
 }
 
 

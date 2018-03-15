@@ -22,5 +22,9 @@
 //展示座位
 -(void)seatXY;
 //购票
--(id)doPay;
+-(void)doPay;
+
+//确认购票后的位置
+-(void)seatXYb;
+
 @end

@@ -11,7 +11,14 @@
 @interface movieInfo : NSObject{
     NSString *title;
     int num;
+    //电影名称
     NSString *movieName;
+    //价格
+    float price;
+    //上映时间
+    NSString *date;
+    //开播时间
+    NSString *time;
 }
 
 -(id)movieListDic;

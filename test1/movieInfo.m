@@ -11,7 +11,6 @@
 
 @implementation movieInfo
 
-
 -(void)movieList{
     NSLog(@"编号：1 名称：《西游记之孙悟空三打白骨精》 导演:郑保瑞 主演:郭富城 时长:120 开播时间:19:30\n");
     NSLog(@"编号：2 名称：《长城》 导演：张艺谋 主演：张涵予 时长：130 开播时间：20:00\n");
@@ -59,11 +58,13 @@
     //根据编号返回电影信息
     NSArray *arrkey = [mdict allKeys];
     NSArray *arr = @[@"电影名称",@"价格",@"上映时间",@"开播时间"];
+    NSString *abc = [[NSString alloc]init];
     for (NSString *item in arr) {
-        NSLog(@"%@：%@  ",item,[mdict valueForKey:item]);
+//        NSLog(@"%@：%@  ",item,[mdict valueForKey:item]);
+        abc = [abc stringByAppendingFormat:@"%@:%@ ",item,[mdict valueForKey:item]];
     }
-    
-    return movieName;
+    NSLog(@"%@",abc);
+    return abc;
 }
 
 

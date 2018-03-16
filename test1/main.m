@@ -18,10 +18,11 @@ int main(int argc, const char * argv[]) {
         NSLog(@"==============欢迎观临慕课电影院==============\n");
         NSLog(@"=======热播电影列表=======\n");
         movieInfo *list = [[movieInfo alloc] init];
-        [list movieList];
-        Choice *userSelect = [[Choice alloc] init];
-        [userSelect movieChoice];
+//        [list movieList];
+//        Choice *userSelect = [[Choice alloc] init];
+//        [userSelect movieChoice];
 
+        [list movieDic];
          }
     return 0;
 }

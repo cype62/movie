@@ -71,15 +71,15 @@
 }
 
 //缴费方法
--(void)doPay{
-    
+//-(void)doPay{
+-(void)setDoPay:(NSString *)moviename{
     //  获取字符串类型
     NSLog(@"你确定要购买吗? y/n\n");
     char pay;
     rewind(stdin);
     scanf("%c",&pay);
     if(pay == 'y'){
-        NSLog(@"你好，这是你的购票信息，款项已扣除：\n");
+        NSLog(@"你好，这是你的购票信息。款项已扣除：\n：%@\n",moviename);
 //        NSLog(@"已扣款，电影票据：%@\n",[ ])
     }else if(pay == 'n'){
         NSLog(@"退出\n");

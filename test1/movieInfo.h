@@ -31,6 +31,6 @@
 //获取购票的电影信息
 -(id)movieName;
 
--(id)movieDic;
+-(id)setMovieDic:(NSArray *)newMovieDic;
 
 @end

@@ -29,42 +29,53 @@
             [list movieListDic];
             [seat setDoPay:(list.movieName)];
             [seat seatXYb];
+            [list setMovieDic:@[@"电影名称",@"价格",@"上映时间"]];
+            NSLog(@"%@  ",seat.stXY);
+            [list setMovieDic:@[@"开播时间"]];
             break;
         case 2:
             [list setNum:userSelect];
             [seat seatXY];
             NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
-            [seat doPay];
-            [seat seatXYb];
             [list movieListDic];
-            NSLog(@"%@",list.movieName);
+            [seat setDoPay:(list.movieName)];
+            [seat seatXYb];
+            [list setMovieDic:@[@"电影名称",@"价格",@"上映时间"]];
+            NSLog(@"%@  ",seat.stXY);
+            [list setMovieDic:@[@"开播时间"]];
             break;
         case 3:
             [list setNum:userSelect];
             [seat seatXY];
             NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
-            [seat doPay];
-            [seat seatXYb];
             [list movieListDic];
-            NSLog(@"%@",list.movieName);
+            [seat setDoPay:(list.movieName)];
+            [seat seatXYb];
+            [list setMovieDic:@[@"电影名称",@"价格",@"上映时间"]];
+            NSLog(@"%@  ",seat.stXY);
+            [list setMovieDic:@[@"开播时间"]];
             break;
         case 4:
             [list setNum:userSelect];
             [seat seatXY];
             NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
-            [seat doPay];
-            [seat seatXYb];
             [list movieListDic];
-            NSLog(@"%@",list.movieName);
+            [seat setDoPay:(list.movieName)];
+            [seat seatXYb];
+            [list setMovieDic:@[@"电影名称",@"价格",@"上映时间"]];
+            NSLog(@"%@  ",seat.stXY);
+            [list setMovieDic:@[@"开播时间"]];
             break;
         case 5:
             [list setNum:userSelect];
             [seat seatXY];
             NSLog(@"你选择的电影是：%@ %@\n",[list titleName],seat.stXY);
-            [seat doPay];
-            [seat seatXYb];
             [list movieListDic];
-            NSLog(@"%@",list.movieName);
+            [seat setDoPay:(list.movieName)];
+            [seat seatXYb];
+            [list setMovieDic:@[@"电影名称",@"价格",@"上映时间"]];
+            NSLog(@"%@  ",seat.stXY);
+            [list setMovieDic:@[@"开播时间"]];
             break;
         default:
             NSLog(@"输入有误，请重新输入！");

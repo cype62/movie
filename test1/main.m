@@ -22,7 +22,8 @@ int main(int argc, const char * argv[]) {
 //        Choice *userSelect = [[Choice alloc] init];
 //        [userSelect movieChoice];
 
-        [list movieDic];
+        
+        [list setMovieDic:@[@"电影名称",@"价格",@"上映时间"]];
          }
     return 0;
 }

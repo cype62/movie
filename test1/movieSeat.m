@@ -82,7 +82,9 @@
         NSLog(@"你好，这是你的购票信息。款项已扣除：\n%@\n",moviename);
 //        NSLog(@"已扣款，电影票据：%@\n",[ ])
     }else if(pay == 'n'){
-        NSLog(@"退出\n");
+        NSLog(@"不买你来干啥，拜拜！\n");
+        exit(0);
+        
     }else{
         NSLog(@"输入有误，请重新输入!");
     }

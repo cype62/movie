@@ -29,8 +29,6 @@
 -(void)setNum:(int)newNum;
 //获取电影名称
 -(id)titleName;
-//获取购票的电影信息
--(id)movieName;
 
 -(void)setMovieDic:(NSArray *)newMovieDic;
 -(id)abc;

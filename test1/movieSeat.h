@@ -22,7 +22,8 @@
 //展示座位
 -(void)seatXY;
 //购票
--(void)setDoPay:(NSString *)moviename;
+//-(void)setDoPay:(NSString *)moviename;
+-(void)doPay;
 
 //确认购票后的位置
 -(void)seatXYb;

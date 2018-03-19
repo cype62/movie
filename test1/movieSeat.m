@@ -40,14 +40,14 @@
     NSLog(@"请选择座位号[1,15]:");
     scanf("%d",&_seatX);
     NSLog(@"你选择座位号是:%d\n",_seatX);
-    _stXY = [[NSString alloc] initWithFormat:@"%d排%d座",_seatX,_seatY ];
+    _stXY = [[NSString alloc] initWithFormat:@"%d排%d座",_seatY,_seatX ];
 }
 
 //展示已选座位
 -(void)seatXYb{
     int x;      //横排
     int y;      //纵排
-    NSLog(@"现在为你展示影厅的座位表");
+    NSLog(@"\n现在为你展示影厅的座位表");
     for(y = 0;y <= 7;y++){
         NSLog(@"\n");
         if(y == 0){
@@ -68,19 +68,21 @@
             }
         
         }
+    NSLog(@"\n");
 }
 
 //缴费方法
-//-(void)doPay{
--(void)setDoPay:(NSString *)moviename{
+-(void)doPay{
+//-(void)setDoPay:(NSString *)moviename{
     //  获取字符串类型
     NSLog(@"你确定要购买吗? y/n\n");
     char pay;
     rewind(stdin);
     scanf("%c",&pay);
     if(pay == 'y'){
-        NSLog(@"你好，这是你的购票信息。款项已扣除：\n%@\n",moviename);
+        NSLog(@"你好，这是你的购票信息。款项已扣除：\n");
 //        NSLog(@"已扣款，电影票据：%@\n",[ ])
+        
     }else if(pay == 'n'){
         NSLog(@"不买你来干啥，拜拜！\n");
         exit(0);

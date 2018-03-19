@@ -19,9 +19,10 @@
     NSString *date;
     //开播时间
     NSString *time;
+    //确认缴费后的电影信息
+    NSString *abc;
 }
 
--(id)movieListDic;
 //获取电影列表
 -(void)movieList;
 //根据编号获取电影名称
@@ -31,6 +32,7 @@
 //获取购票的电影信息
 -(id)movieName;
 
--(id)setMovieDic:(NSArray *)newMovieDic;
+-(void)setMovieDic:(NSArray *)newMovieDic;
+-(id)abc;
 
 @end
